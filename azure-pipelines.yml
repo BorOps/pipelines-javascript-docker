@@ -14,7 +14,6 @@ variables:
 
 steps:
 - task: Docker@2
-- task: Docker@2
   inputs:
     containerRegistry: 'docker-hub-conn'
     repository: 'mihajlob2609/azure-webapp'
