@@ -14,9 +14,10 @@ variables:
 
 steps:
 - task: Docker@2
-  displayName: Build an image
+- task: Docker@2
   inputs:
     containerRegistry: 'docker-hub-conn'
-    repository: '$(imageName)'
+    repository: 'mihajlob2609/azure-webapp'
     command: 'buildAndPush'
-    Dockerfile: 'app/Dockerfile'
+    Dockerfile: '**/Dockerfile'
+  displayName: Build an image
