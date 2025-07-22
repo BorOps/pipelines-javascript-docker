@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: Mihajlo Onboarding
 
 variables:
   imageName: 'pipelines-javascript-docker'
